@@ -1,0 +1,36 @@
+@mixin center_item{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.outer{
+	@include center_item;
+	flex-direction:column;
+}
+.footer{
+     background: rgb(89,32,62);
+		background: linear-gradient(360deg, rgba(89,32,62,1) 100%, rgba(165,232,255,1) 100%); 
+	width: 80vw;
+	height: 10vh;
+	display: grid;
+	grid-template-columns: 60% repeat(4,10%);
+	color: white;
+	.logo{
+			font-family: 'Poppins', sans-serif;
+	        font-size:2rem;
+	        font-weight: 400;
+	}
+	div{
+		@include center_item;
+	}
+	div:not(:first-child){
+		font-family: 'Poppins', sans-serif;
+	}
+}
+.line{
+	width: 80vw;
+	height: 6px;
+	background: linear-gradient(270deg, #832ACB 0%, #D31A85 100%);
+	margin-bottom: 1rem;
+
+}

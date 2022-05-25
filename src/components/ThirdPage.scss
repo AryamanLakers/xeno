@@ -1,0 +1,119 @@
+@mixin center_item{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.outer_box1{
+    width:100vw;
+    height:100vh;
+    margin-top:8rem;
+    @include center_item;
+    flex-direction:row;
+    .first_box,.second_box{
+      width:50%;
+      height:100%;
+    }
+    .first_box{
+        .common{
+          text-align:left;
+          margin-left:2rem;
+        }
+        @include center_item;
+        .input1{
+          @include center_item;
+          flex-direction:row;
+          align-items:start;
+          justify-content:start;
+          margin:4rem 2rem;
+          margin-top:8rem;
+          margin-bottom:1rem;
+          .otp_input{
+            width:2rem;
+            height:2rem;
+            border-bottom:5px solid #9A9A9A;
+            margin-right:10px;
+          }
+        }
+        #buttons{margin-left:0;}
+        .resend{
+            margin-bottom:8rem;
+        }
+        #xeno{
+            margin-bottom:3rem;
+            background:black;
+            width:93%;
+            font-family: 'Poppins', sans-serif;
+            font-size:1.5rem;
+            font-weight: 700;
+            color:white;
+            text-align:left;
+            padding-left:0rem;
+
+        }
+        #title{
+        
+            width:100%;
+            font-family: 'Poppins', sans-serif;
+            font-size:2rem;
+            font-weight: 700;
+            color:white;
+        }
+        #title2{
+            margin-bottom:2rem;
+            width:100%;
+            font-family: 'Poppins', sans-serif;
+            font-size:2rem;
+            font-weight: 700;
+            background: rgb(219,50,235);
+            background: linear-gradient(270deg, rgba(219,50,235,0.99327724253764) 7%, rgba(46,244,187,1) 100%); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        #meta{
+          width:100%;
+          margin-bottom:1rem;
+          color: #9A9A9A;
+          font-size:1rem;
+        }
+        .mobile{
+            width:50%;
+            height:100%;
+            box-shadow: #CC1B8B 0px 22px 100px 4px;
+        }
+
+        .border-gradient {
+                border: 5px solid;
+                border-image-slice: 1;
+                border-width: 2px;
+          }
+        .border-gradient-purple {
+                border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+          }
+    }
+    .second_box{
+        
+        .common{
+          text-align:left;
+        }
+        #title,#title2{
+                font-family: 'Poppins', sans-serif;
+                font-size:2.5rem;
+                font-weight: 700;
+                color:white;
+                
+        }
+        #title2{
+
+          background: rgb(219,50,235);
+          background: linear-gradient(270deg, rgba(219,50,235,0.99327724253764) 7%, rgba(46,244,187,1) 100%); 
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+    
+        }
+        #meta{
+          color: #9A9A9A;
+          font-size:1.5rem;
+          margin:3rem 0;
+        }
+    }
+}
