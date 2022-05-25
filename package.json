@@ -10,7 +10,10 @@
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "sass": "1.52.1"
+    "sass": "1.52.1",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -6,6 +6,7 @@ import ThirdPage from "./components/ThirdPage.js";
 import FourthPage from "./components/FourthPage.js";
 import FifthPage from "./components/FifthPage.js";
 import SixthPage from "./components/SixthPage.js";
+import EighthPage from "./components/EighthPage.js";
 import SeventhPage from "./components/SeventhPage.js";
 import Footer from "./components/Footer.js";
 
@@ -15,6 +16,7 @@ export default function App() {
   return (
     <div className="App">
       <FirstPage />
+      <EighthPage />
       <ThirdPage />
       <SecondPage />
       <FourthPage />
