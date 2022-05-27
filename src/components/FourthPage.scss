@@ -4,14 +4,15 @@
   justify-content:center;
 }
 .fourth_page1{
+	overflow-x:hidden;
 	width:100vw;
 	height:100vh;
 	flex-direction:row;
 	@include center_item;
 	.border-gradient {
-	  border: 10px solid;
+	  border: 1rem solid;
 	  border-image-slice: 1;
-	  border-width: 5px;
+	  border-width: 0.3rem;
 	}
 	.border-gradient-purple {
 	  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
@@ -35,7 +36,7 @@
 		padding:0 1rem;
 		.heading,.sub_heading{
 			font-family: 'Poppins', sans-serif;
-		    font-size:calc(1.3vh + 1.3vw);
+		    font-size:2.3rem;
 		    font-weight: 700;
 		    color:white;
 		}
@@ -46,7 +47,7 @@
 		    -webkit-text-fill-color: transparent;
 		}
 		.meta{
-			font-size:calc(0.8vh + 0.8vw);
+			font-size:1.2rem;
 			color: #9A9A9A;
 			margin-top:3rem;
 
@@ -54,14 +55,3 @@
 	}
 }
 
-@media only screen and (max-width: 1500px){
-   .each .circle{
-   		display:none;
-   }
-}
-@media only screen and (max-height: 600px){
-   .fourth_page {
-      height:200vh;
-     
-   }
-}

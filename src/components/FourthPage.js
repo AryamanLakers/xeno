@@ -10,8 +10,8 @@ export default function FirstPage() {
           <div className="heading">Depsite & withdraw </div>
           <div className="sub_heading">at anytime</div>
           <div className="meta">With Xeno you can deposite
-and withdraw your money
-anytime anywhere</div>
+          and withdraw your money
+          anytime anywhere</div>
         </div>
         <div className="each border-gradient border-gradient-purple">
           <div className="circle"></div>

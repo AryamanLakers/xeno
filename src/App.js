@@ -1,5 +1,5 @@
 import "./styles.css";
-import Navbar from "./components/navbar.js";
+import Navbar from "./components/Navbar.js";
 import FirstPage from "./components/FirstPage.js";
 import SecondPage from "./components/SecondPage.js";
 import ThirdPage from "./components/ThirdPage.js";
@@ -15,6 +15,7 @@ import "./components/navbar.scss";
 export default function App() {
   return (
     <div className="App">
+      <Navbar />
       <FirstPage />
       <EighthPage />
       <ThirdPage />

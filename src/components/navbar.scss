@@ -1,53 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;600;700&family=Montserrat:ital,wght@0,200;1,400&family=Play&family=Ubuntu:wght@300&family=Yanone+Kaffeesatz:wght@200;300&display=swap');
-@mixin center(){
+html,body{margin:0;}
+@mixin center_item{
   display: flex;
   align-items:center;
   justify-content:center;
 }
-body{
-  margin: 0;
-  padding:0;
-}
-.nav_bar{
-  display: grid;
-  margin:0;
-  width:100vw;
+.navbar_outer{
   position:fixed;
-  height:10vh;
-  grid-template-columns: 80vw 10vw 10vw;
-  background: #1C151F;
-  color:white;
-  border-bottom: 5px solid #CB1A8C;
-  backdrop-filter: blur(36px);
-  .logo{
-    font-family: 'Barlow', sans-serif;
-    font-weight:700;
-    font-size:1.5rem;
-    letter-spacing: 1px;
-   }
-   .gb{
-     width:90%;
-     padding:0.5rem;
-     background: linear-gradient(90deg, #8629C8 0%, #D31985 100%);
-     border:0;
-     border-radius: 47px;
-     font-family: 'Barlow', sans-serif;
-     font-weight:400;
-     transition: scale 400ms ease-in ;
-     color:white; 
-   }
-   #gb2:hover{
-    scale:1.1;
-   }
+  z-index:100;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: saturate(180%) blur(10px);
+  width:100vw;
+  height:5rem;
+
+  .navbar{
+    height:100%;
+    @include center_item;
+    flex-direction:row;
+    color:white;
+    .logo,.sign_up,.sign_in{
+        width:100%;
+        height:100%;
+        @include center_item;
+        box-sizing:border-box;
+    }
+    .sign_up,.sign_in{
+      width:10rem;
+      height:2rem;
+      margin-right:5rem;
+    }
+    button {
+        margin:0 4rem;
+        margin-top:calc(0.5vh + 0.5vw);
+        border: none;
+        padding: 1em;
+        outline: none;
+        color: white;
+        font-weight: 900;
+        font-style: 1.2em;
+        font-size:1rem;
+        letter-spacing: 0.1em;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        background: none;
+        text-shadow: 3px 3px 10px rgba(0,0,0,.45);
+        &:before, &:after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          border-radius: 10em;
+          transform: translateX(-50%) translateY(-50%);
+          width: 14rem;
+          height: 2.5rem;
+          content: '';
+          z-index: -2;
+          background-size: 400% 400%;
+         background: linear-gradient(90deg, #752DD7 -12.09%, #D81981 100%);
+
+        }
+        &:before {
+          filter: blur(7px);
+          transition: all .25s ease;
+          animation: pulse 10s infinite ease;
+        }
+        &:after {
+          filter: blur(0.3px);
+        }
+        &:hover {
+          &:before {
+            width: 115%;
+            height: 115%;
+          }
+        }
+      }
+    .logo{
+            font-family: 'Poppins', sans-serif;
+            font-size:1.8rem;
+            font-weight: 700;
+            justify-content:start;
+            padding-left:5rem;
+    }
+   
   }
 
+}
 
+.footer{
+    
+    background: black;
+    width: 100vw;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 60% repeat(4,10%);
+    color: white;
+    .logo{
+        font-family: 'Poppins', sans-serif;
+            font-size:2rem;
+            font-weight: 400;
+    }
+  div{
+    @include center_item;
+  }
+  div:not(:first-child){
+    font-family: 'Poppins', sans-serif;
+    font-size:1rem;
+  }
+}
+.line{
+  width: 250rem;
+  height: 6px;
+  background: linear-gradient(270deg, #832ACB 0%, #D31A85 100%);
+  margin-bottom: 1rem;
 
-
-.nav_common{
-  margin:auto;
-  text-align: center;
-  width:100%;
-  height:100%;
-  @include center();
 }

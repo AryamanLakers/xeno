@@ -47,7 +47,7 @@ export default function EighthPage() {
        <div className="withdraw">Withdraw anytime</div>
        <div className="content">
           <div className="slider">
-            <div className="slider-start border-gradient border-gradient-purple">
+            <div className="slider-start ">
               <div className="meta">Select the time period</div>
               <div className="period_slider">
                   <Slider

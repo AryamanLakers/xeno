@@ -2,7 +2,8 @@ import "./SecondPage.scss";
 import Button from "./Button.js";
 export default function SecondPage() {
   return (
-  	<div className="outer_box">
+  	<div className="outer_box_new">
+
    		<div className="first_box">
         <div className="title common">Join us in less than </div>
         <div className="sub_heading common">10 seconds</div>
@@ -12,9 +13,10 @@ export default function SecondPage() {
         <div className="button"></div>
         <div className="common"id="buttons">
             <button>Learn More</button>
-            
         </div>
       </div>
+
+
       <div className="second_box">
         <div className="border-gradient-purple border-gradient inner_box">
           <div id="xeno" className="common">Xeno</div>
@@ -28,6 +30,8 @@ export default function SecondPage() {
           </div>
         </div>
       </div>
+
+
     </div>
   );
 }

@@ -4,6 +4,7 @@
   justify-content:center;
 }
 .grid1{
+  overflow-x:hidden;
   width:100vw;
   height:120vh;
   display:grid;
@@ -28,9 +29,9 @@
  
 
   .border-gradient {
-    border: 10px solid;
+    border: 1rem solid;
     border-image-slice: 1;
-    border-width: 5px;
+    border-width: 0.3rem;
   }
   .border-gradient-purple {
     border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
@@ -58,7 +59,7 @@
     padding:0 1rem;
     .heading,.sub_heading,.fifth_page.title{
         font-family: 'Poppins', sans-serif;
-        font-size:calc(1.3vh + 1.3vw);
+        font-size:2.5rem;
         font-weight: 700;
         color:white;
     }
@@ -69,18 +70,10 @@
         -webkit-text-fill-color: transparent;
     }
     .meta{
-      font-size:calc(0.7vh + 0.7vw);
+      font-size:1.2rem;
       color: #9A9A9A;
       margin-top:3rem;
 
     }
   }
-}
-@media only screen and (max-height: 600px){
-   .grid1 {
-      height:200vh;
-      .fifth_page{
-          padding:5rem 0;
-      }
-   }
 }

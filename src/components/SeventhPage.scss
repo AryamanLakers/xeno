@@ -4,6 +4,7 @@
   justify-content:center;
 }
 .seventh_page{
+  overflow-x:hidden;
 	width:100vw;
 	height:100vh;
 	@include center_item;
@@ -18,7 +19,7 @@
 			  text-transform: uppercase;
 			  font-weight: 900;
 			  font-style: 1.2em;
-			  letter-spacing: 0.2em;
+			  letter-spacing: 0.1em;
 			  position: relative;
 			  z-index: 1;
 			  cursor: pointer;
@@ -30,8 +31,8 @@
 			    left: 50%;
 			    border-radius: 10em;
 			    transform: translateX(-50%) translateY(-50%);
-			    width: 150%;
-			    height: 150%;
+			    width: 20rem;
+			    height: 3rem;
 			    content: '';
 			    z-index: -2;
 			    background-size: 400% 400%;

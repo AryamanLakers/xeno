@@ -3,6 +3,8 @@ import Button from "./Button.js";
 export default function ThirdPage() {
   return (
   	<div className="outer_box1">
+
+
    		 <div className="first_box">
           <div className="mobile border-gradient-purple border-gradient ">
             <div id="xeno" className="common">Xeno</div>
@@ -24,6 +26,8 @@ export default function ThirdPage() {
             </div>
           </div>
        </div>
+
+
        <div className="second_box1">
             <div id="title" className="common">Better than a </div>
             <div id="title2"className="common">Bank</div>
@@ -35,6 +39,8 @@ export default function ThirdPage() {
               <button>Back</button>
             </div>
        </div>
+
+       
     </div>
     
   );
