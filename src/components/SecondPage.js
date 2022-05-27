@@ -23,8 +23,8 @@ export default function SecondPage() {
           <div id="meta"className="common">Please verify your email address to process with the KYC</div>
           <div className="common input1"><input className="common"type="text" Placeholder="yourname@example.com"/ ></div>
           <div className="common"id="buttons">
-            <button>Back</button>
-            <button>Next</button>
+            <button id="bt11">Back</button>
+            <button id="bt22">Next</button>
           </div>
         </div>
       </div>

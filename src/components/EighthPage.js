@@ -1,16 +1,46 @@
 import "./EighthPage.scss";
-import {useState} from "react"
+import {useState,useEffect} from "react"
 import Button from "./Button.js";
 import Slider from '@mui/material/Slider';
 export default function EighthPage() {
+
     const [currentValue, setCurrent]= useState(30)
     const [currentPeriod, setCurrentPeriod]= useState(6)
-   function valuetext(value: number) {
+    function valuetext(value: number) {
       setCurrent(value);
     }
     function periodValue(value: number) {
       setCurrentPeriod(value);
     }
+    function useWindowDimensions() {
+
+      const hasWindow = typeof window !== 'undefined';
+
+      function getWindowDimensions() {
+        const width = hasWindow ? window.innerWidth : null;
+        const height = hasWindow ? window.innerHeight : null;
+        return {
+          width,
+          height,
+        };
+      }
+
+      const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+      useEffect(() => {
+        if (hasWindow) {
+          function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+          }
+
+          window.addEventListener('resize', handleResize);
+          return () => window.removeEventListener('resize', handleResize);
+        }
+      }, [hasWindow]);
+
+      return windowDimensions;
+    }
+  const { height, width } = useWindowDimensions();
   return (
   	<div className="page-8">
    		 <div className="heading">Invest & earn up to 15%* on USDT</div>
@@ -28,7 +58,7 @@ export default function EighthPage() {
                       max={12}
                       step={6}
                       sx={{
-                        width: 300,
+                        width: width<720?150:(0.1*height+0.1*width)*1.5,
                         color: '#8829c6',
                         '& .MuiSlider-thumb': {
                           borderRadius: '1px',
@@ -45,7 +75,7 @@ export default function EighthPage() {
                       min={0}
                       max={10000000000000}
                       sx={{
-                        width: 300,
+                        width: width<720?150:(0.1*height+0.1*width)*1.5,
                         color: '#d51983',
                         '& .MuiSlider-thumb': {
                           borderRadius: '1px',

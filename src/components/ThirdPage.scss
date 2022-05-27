@@ -3,6 +3,11 @@
   align-items:center;
   justify-content:center;
 }
+$mobile_width:50%;
+$total_width:calc($mobile_width * 2);
+$total_height:100%;
+$each_button_width:calc($total_width * 2);
+
 .outer_box1{
     width:100vw;
     height:100vh;
@@ -25,7 +30,7 @@
           align-items:start;
           justify-content:start;
           margin:4rem 2rem;
-          margin-top:8rem;
+          margin-top:calc(4vh + 4vw);
           margin-bottom:1rem;
           .otp_input{
             width:2rem;
@@ -34,9 +39,69 @@
             margin-right:10px;
           }
         }
-        #buttons{margin-left:0;}
+        .outer_buttons_box{
+            width:100%;
+            height:calc($total_width * 0.1);
+        }
+        #buttons1{
+            width:100%;
+            height:100%;
+            margin:0;
+            #btn2-1{margin-left:calc($total_width / 50%)* 3rem;}
+            #btn1-1{
+                margin-left:4rem;
+            }
+            button {
+
+              margin:0 0rem;
+              margin-top:calc(0.4vh + 0.4vw);
+              border: none;
+              padding: 1em;
+              outline: none;
+              color: white;
+              text-transform: uppercase;
+              font-weight: 900;
+              font-style: 1.2em;
+              font-size:calc(0.5vw + 0.5vh);
+              letter-spacing: 0.2em;
+              position: relative;
+              z-index: 1;
+              cursor: pointer;
+              background: none;
+              text-shadow: 3px 3px 10px rgba(0,0,0,.45);
+              &:before, &:after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                border-radius: 10em;
+                transform: translateX(- 50%) translateY(-50%);
+                width: $each_button_width;
+                height: 100%;
+
+                content: '';
+                z-index: -2;
+                background-size: 400% 400%;
+               background: linear-gradient(90deg, #752DD7 -12.09%, #D81981 100%);
+
+              }
+              &:before {
+                filter: blur(7px);
+                transition: all .25s ease;
+                animation: pulse 10s infinite ease;
+              }
+              &:after {
+                filter: blur(0.3px);
+              }
+              &:hover {
+                &:before {
+                  width: 115%;
+                  height: 115%;
+                }
+              }
+            }
+        }
         .resend{
-            margin-bottom:8rem;
+            margin-bottom:calc(($total_height / 20%) * 2rem);
         }
         #xeno{
             margin-bottom:3rem;
@@ -52,7 +117,7 @@
         }
         #title{
         
-            width:100%;
+            width:90%;
             font-family: 'Poppins', sans-serif;
             font-size:2rem;
             font-weight: 700;
@@ -60,7 +125,7 @@
         }
         #title2{
             margin-bottom:2rem;
-            width:100%;
+            width:90%;
             font-family: 'Poppins', sans-serif;
             font-size:2rem;
             font-weight: 700;
@@ -70,13 +135,13 @@
             -webkit-text-fill-color: transparent;
         }
         #meta{
-          width:100%;
+          width:80%;
           margin-bottom:1rem;
           color: #9A9A9A;
-          font-size:1rem;
+          font-size:calc(0.7vw + 0.7vh);
         }
         .mobile{
-            width:50%;
+            width:$mobile_width;
             height:100%;
             box-shadow: #CC1B8B 0px 22px 100px 4px;
         }
@@ -116,4 +181,54 @@
           margin:3rem 0;
         }
     }
+}
+@media only screen and (max-height: 720px){
+    .outer_box1{
+        margin:8rem 0;
+    }
+    .first_box .mobile .resend{
+        margin-bottom:calc(($total_height / 40%) * 2rem);
+    }
+
+}
+@media only screen and (max-height: 620px){
+   
+    .first_box .mobile .input1{
+        margin-top:calc(1vh + 1vw);
+    }
+    .first_box .mobile .resend{
+        margin-bottom:calc(($total_height / 70%) * 1rem);
+    }
+}
+@media only screen and (max-width: 860px){
+   
+   .outer_box1 .first_box .mobile{
+        width:70%;
+    }
+}
+ 
+@media only screen and (max-width: 1320px){
+    .first_box .mobile #buttons1{
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        width:20%;
+        #btn1-1,#btn2-1{
+            margin-left:0;
+            height:60%;
+        }
+    }
+    .first_box .mobile .outer_buttons_box{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        
+    }
+}
+@media only screen and (max-height: 600px){
+  .outer_box1{
+        height:130vh;
+  }
+   
 }

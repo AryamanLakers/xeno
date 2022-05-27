@@ -35,7 +35,7 @@
 			 background: rgb(219,50,235);
 			background: linear-gradient(270deg, rgba(219,50,235,0.99327724253764) 7%, rgba(46,244,187,1) 100%); 
 			-webkit-background-clip: text;
-    		-webkit-text-fill-color: transparent;
+    	-webkit-text-fill-color: transparent;
 		}
 	}
 	.border-gradient {
@@ -45,15 +45,15 @@
 	}
 	.border-gradient-purple {
 	  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-	}
+	}$inner_box_height:60%;
 	.second_box{
 		position:relative;
-		left:18%;
-		width:50%;
+		left:calc((100vw / 20vw) * 3rem + 2rem);
+		width:calc(50% + (100vw / 20vw) * 5%);
 		height:100%;
 		.inner_box{
 			width:80%;
-			height:60%;
+			height:$inner_box_height;
 
 
 
@@ -63,11 +63,11 @@
 				margin-left:3rem;
 			}
 			#xeno{
-				margin-bottom:3rem;
+				margin-bottom:calc(($inner_box_height / 30%) * 1rem);
 				margin-top:2rem;
 				width:100%;
 				font-family: 'Poppins', sans-serif;
-		        font-size:1.5rem;
+		        font-size:calc(($inner_box_height / 30%) * 1rem);
 		        font-weight: 700;
 		        color:white;
 			}
@@ -75,7 +75,7 @@
 				
 				width:100%;
 				font-family: 'Poppins', sans-serif;
-		        font-size:2rem;
+		        font-size:calc((100vh / 40vh) * 1rem);
 		        font-weight: 700;
 		        color:white;
 			}
@@ -83,7 +83,7 @@
 				margin-bottom:2rem;
 				width:100%;
 				font-family: 'Poppins', sans-serif;
-		        font-size:2rem;
+		        font-size:calc((100vh / 50vh) * 1rem);
 		        font-weight: 700;
 				 background: rgb(219,50,235);
 				background: linear-gradient(270deg, rgba(219,50,235,0.99327724253764) 7%, rgba(46,244,187,1) 100%); 
@@ -158,3 +158,54 @@
 				  }
 				}
 			}
+
+@media only screen and (max-height: 730px){
+   .second_box .inner_box{
+   		#xeno{font-size:1rem;}
+   }
+   .second_box #buttons{
+   		text-align:center;
+   		position:relative;
+   		top:-80%;
+   		right:-20%;
+   }
+   .second_box #bt11,.second_box #bt22{
+   				padding:0.5em;
+
+   }
+}
+@media only screen and (max-height: 680px){
+   
+   .second_box #buttons{
+   		
+   		top:-90%;
+   		right:-20%;
+   }
+   
+}
+@media only screen and (max-height: 600px){
+   
+   .second_box #buttons{
+   		
+   		top:-100%;
+   		right:-20%;
+   }
+   
+}
+
+@media only screen and (max-height: 600px){
+   .outer_box .second_box .inner_box #title{
+   			font-size:1.5rem;
+   }
+   .outer_box .second_box .inner_box #title2{
+   			font-size:1.5rem;
+   }
+   .outer_box .second_box .inner_box #meta{
+   			font-size:0.7rem;
+   }
+   
+   .input1{
+   		scale:0.7
+   		
+   }
+}

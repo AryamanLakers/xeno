@@ -1,6 +1,6 @@
 .button-container {
   position: absolute;
-  top: 80%;
+  top: calc(100vh * 0.9);
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -8,14 +8,14 @@
 .btn {
   display: block;
   height: 50px;
-  width: 300px;
+  width: calc(10vw + 10vh);
   position: relative;
   overflow: hidden;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: white;
-  font-size: 14px;
+  font-size: calc(0.7vh + 0.7vw);
   text-align: center;
   
   &:after {

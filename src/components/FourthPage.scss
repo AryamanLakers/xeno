@@ -35,7 +35,7 @@
 		padding:0 1rem;
 		.heading,.sub_heading{
 			font-family: 'Poppins', sans-serif;
-		    font-size:2.5rem;
+		    font-size:calc(1.3vh + 1.3vw);
 		    font-weight: 700;
 		    color:white;
 		}
@@ -46,10 +46,22 @@
 		    -webkit-text-fill-color: transparent;
 		}
 		.meta{
-			font-size:1.5rem;
+			font-size:calc(0.6vh + 0.6vw);
 			color: #9A9A9A;
 			margin-top:3rem;
 
 		}
 	}
+}
+
+@media only screen and (max-width: 1500px){
+   .each .circle{
+   		display:none;
+   }
+}
+@media only screen and (max-height: 600px){
+   .fourth_page {
+      height:200vh;
+     
+   }
 }

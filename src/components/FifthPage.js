@@ -3,7 +3,7 @@ import "./FifthPage.scss";
 import Button from "./Button.js";
 export default function FifthPage() {
   return (
-  	<div className="grid">
+  	<div className="grid1">
    		<div className="title">Meet The Team</div>
       <div className="fifth_page">
 

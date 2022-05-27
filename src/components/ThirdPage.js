@@ -16,9 +16,11 @@ export default function ThirdPage() {
               <div className="otp_input"></div>
             </div>
             <div className="common resend"><a href="/">Resend OTP</a></div>
-            <div className="common"id="buttons">
-              <button>Back</button>
-              <button>Next</button>
+            <div className="outer_buttons_box">
+              <div className="common"id="buttons1">
+                <button id="btn1-1">Back</button>
+                <button id="btn2-1">Next</button>
+              </div>
             </div>
           </div>
        </div>
