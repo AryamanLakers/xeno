@@ -31,7 +31,7 @@ export default function ThirdPage() {
               feature so that you can get all the detailes regarding
               your investment anytime, anywhere!
             </div>
-            <div className="common"id="buttons 2_box">
+            <div className="common"id="buttons">
               <button>Back</button>
             </div>
        </div>
