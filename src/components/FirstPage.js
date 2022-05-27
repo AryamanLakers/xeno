@@ -8,7 +8,7 @@ export default function FirstPage() {
         <div className="multiply">multiply</div>
         <div className="sub_heading">Join Xeno today to earn upto 15* p.a</div>
         <div className="invest_button">
-          <Button />
+          <button className="bt1">Invest Now</button>
         </div>
       </div>
     </div>

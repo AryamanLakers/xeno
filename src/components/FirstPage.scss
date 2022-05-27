@@ -6,7 +6,7 @@ body{
   align-items:center;
   justify-content:center;
 }
-
+ 
 .first_page{
   height: 120vh;
   width:100vw;
@@ -40,3 +40,49 @@ body{
   }
    
 }
+.bt1 {
+        margin:0 4rem;
+        margin-top:calc(0.5vh + 0.5vw);
+        border: none;
+        padding: 1em;
+        outline: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-style: 1.2em;
+        font-size:calc(0.5vw + 0.5vh);
+        letter-spacing: 0.2em;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        background: none;
+        text-shadow: 3px 3px 10px rgba(0,0,0,.45);
+        &:before, &:after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          border-radius: 10em;
+          transform: translateX(-50%) translateY(-50%);
+          width: 10rem;
+          height: 3rem;
+          content: '';
+          z-index: -2;
+          background-size: 400% 400%;
+         background: linear-gradient(90deg, #752DD7 -12.09%, #D81981 100%);
+
+        }
+        &:before {
+          filter: blur(7px);
+          transition: all .25s ease;
+          animation: pulse 10s infinite ease;
+        }
+        &:after {
+          filter: blur(0.3px);
+        }
+        &:hover {
+          &:before {
+            width: 115%;
+            height: 115%;
+          }
+        }
+      }
