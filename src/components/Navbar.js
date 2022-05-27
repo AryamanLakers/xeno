@@ -9,7 +9,7 @@ export default function Navbar() {
         <button className="sign_in">Sign In</button>
         
      	</div>
-      <div className="line"></div>
+      <div className="line1-1"></div>
     </div>
   );
 }
