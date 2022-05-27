@@ -3,7 +3,7 @@ import Button from "./Button.js";
 export default function FirstPage() {
   return (
    
-      <div className="fourth_page">
+      <div className="fourth_page1">
 
         <div className="each border-gradient border-gradient-purple">
           <div className="circle"></div>
