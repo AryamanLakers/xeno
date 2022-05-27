@@ -24,7 +24,7 @@ export default function ThirdPage() {
             </div>
           </div>
        </div>
-       <div className="second_box">
+       <div className="second_box1">
             <div id="title" className="common">Better than a </div>
             <div id="title2"className="common">Bank</div>
             <div id="meta"className="common">Xeno provides the smoothest investment tracking

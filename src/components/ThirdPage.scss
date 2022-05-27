@@ -14,7 +14,7 @@ $each_button_width:calc($total_width * 2);
     margin-top:8rem;
     @include center_item;
     flex-direction:row;
-    .first_box,.second_box{
+    .first_box,.second_box1{
       width:50%;
       height:100%;
     }
@@ -155,7 +155,7 @@ $each_button_width:calc($total_width * 2);
                 border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
           }
     }
-    .second_box{
+    .second_box1{
         
         .common{
           text-align:left;
@@ -177,7 +177,8 @@ $each_button_width:calc($total_width * 2);
         }
         #meta{
           color: #9A9A9A;
-          font-size:1.5rem;
+          font-size:calc(1vh + 1vw);
+          padding-right:2rem;
           margin:3rem 0;
         }
     }
@@ -230,5 +231,10 @@ $each_button_width:calc($total_width * 2);
   .outer_box1{
         height:130vh;
   }
-   
+   .first_box{
+        .mobile .resend{
+            margin-top:3rem;
+            margin-bottom:calc(($total_height / 20%) * 1rem + 2rem);
+        }
+   }
 }

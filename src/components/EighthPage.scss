@@ -157,5 +157,7 @@ $slider_start_width: (75 * $slider_width);
   .page-8{
   		height:150vh;
   }
-   
+   .page-8 .content .buttons2{
+   		margin-top:calc((($slider_height) / 25) * 1rem + 2rem);
+   }
 }
