@@ -16,9 +16,9 @@ $slider_start_width: (75 * $slider_width);
 		text-align:left;
 		padding-left:22rem;
 		font-family: 'Poppins', sans-serif;
-        font-size:3rem;
-        font-weight: 700;
-        color:white;
+    font-size:3rem;
+    font-weight: 700;
+    color:white;
 	}
 	.withdraw{
 		    background: rgb(219,50,235);
@@ -32,6 +32,26 @@ $slider_start_width: (75 * $slider_width);
 		height:50%;
 		margin-top:5rem;
 		flex-direction:row;
+		.actual_slider{
+			.amount_shown{
+				width:100%;
+				height:3rem;
+				margin-bottom:2rem;
+				input{
+					width:20rem;
+					height:2.5rem;
+					font-family: 'Poppins', sans-serif;
+			    font-size:1.5rem;
+			    font-weight: 400;
+			    color:white;
+			    background-color:black;
+			    border:2px solid #8829C6;
+			    padding:0.3rem 1rem;
+			    border-radius:10px;
+			    letter-spacing:0.1em;
+				}
+			}
+		}
 		.slider,.box{
 		  width:50%;
 			height:100%;
@@ -69,8 +89,8 @@ $slider_start_width: (75 * $slider_width);
 			grid-template-rows:33% 33% 33%;
 			 background: rgb(136,41,198);
 			background: linear-gradient(270deg, rgba(136,41,198,1) 7%, rgba(213,25,131,0.33781505766369047) 100%); 
-			.amount,.toearn_amount{text-align:center;font-size:1.5rem;} 
-			.add,.toearn{font-size:1.5rem;}
+			.amount,.toearn_amount{text-align:center;font-size:1.8rem;} 
+			.add,.toearn{font-size:1.8rem;}
 			.title{
 					    font-family: 'Poppins', sans-serif;
 			        font-size:2.5rem;

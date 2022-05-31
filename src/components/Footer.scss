@@ -18,13 +18,37 @@
 		color: white;
 		.logo{
 				font-family: 'Poppins', sans-serif;
-		        font-size:2rem;
-		        font-weight: 400;
+		    font-size:2rem;
+		    font-weight: 400;
+		    cursor:pointer;
 		}
-	div{
+		.common{
+			cursor:pointer;
+			text-decoration:none;
+			color:white;
+		}
+		.common:hover{
+			color:green;
+		}
+		.logo:hover{
+      animation: logo 1s ease-out;
+      animation-iteration-count: 1;
+    }
+    @keyframes logo{
+      0%{
+        scale: 1;
+      }
+      50%{
+        font-size:2.5rem;
+      }
+      100%{
+        scale: 1;
+      }
+    }
+	a{
 		@include center_item;
 	}
-	div:not(:first-child){
+	a:not(:first-child){
 		font-family: 'Poppins', sans-serif;
 		font-size:1rem;
 	}

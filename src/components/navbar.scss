@@ -1,4 +1,4 @@
-html,body{margin:0;}
+html,body{margin:0;padding:0;}
 @mixin center_item{
   display: flex;
   align-items:center;
@@ -17,6 +17,20 @@ html,body{margin:0;}
     @include center_item;
     flex-direction:row;
     color:white;
+    .common{
+      margin-right:2rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-style: 1.2em;
+      font-size:1rem;
+      text-decoration:none;
+      color:white;
+    }
+    .common:hover{
+      color:green;
+      cursor:pointer;
+
+    }
     .logo,.sign_up,.sign_in{
         width:100%;
         height:100%;
@@ -26,10 +40,14 @@ html,body{margin:0;}
     .sign_up,.sign_in{
       width:10rem;
       height:2rem;
-      margin-right:5rem;
+      margin-right:10rem;
+    }
+    .sign_up{
+      margin-right:2rem;
     }
     button {
-        margin:0 4rem;
+
+        margin-left:3rem;
         margin-top:calc(0.5vh + 0.5vw);
         border: none;
         padding: 1em;
@@ -37,7 +55,7 @@ html,body{margin:0;}
         color: white;
         font-weight: 900;
         font-style: 1.2em;
-        font-size:1rem;
+        font-size:0.8rem;
         letter-spacing: 0.1em;
         position: relative;
         z-index: 1;
@@ -50,7 +68,7 @@ html,body{margin:0;}
           left: 50%;
           border-radius: 10em;
           transform: translateX(-50%) translateY(-50%);
-          width: 14rem;
+          width: 10rem;
           height: 2.5rem;
           content: '';
           z-index: -2;
@@ -73,12 +91,32 @@ html,body{margin:0;}
           }
         }
       }
-    .logo{
+    .logo{  
+            #inner_logo:hover{
+                animation: logo 1s ease-out;
+                animation-iteration-count: 1;
+            }
             font-family: 'Poppins', sans-serif;
-            font-size:1.8rem;
+            font-size:1.6rem;
             font-weight: 700;
             justify-content:start;
-            padding-left:5rem;
+            padding-left:10rem;
+            text-decoration:none;
+            color:white;
+    }
+    .logo:hover{
+      
+    }
+    @keyframes logo{
+      0%{
+        scale: 1;
+      }
+      50%{
+        font-size:2rem;
+      }
+      100%{
+        scale: 1;
+      }
     }
    
   }

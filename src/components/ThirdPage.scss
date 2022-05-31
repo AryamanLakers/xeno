@@ -59,7 +59,7 @@ $each_button_width:calc($total_width * 2);
             }
             button {
 
-              margin:0 0rem;
+              margin:0 1rem;
               
               border: none;
               padding: 1em;
@@ -68,7 +68,7 @@ $each_button_width:calc($total_width * 2);
               text-transform: uppercase;
               font-weight: 900;
               font-style: 1.2em;
-              font-size:1rem;
+              font-size:0.8rem;
               letter-spacing: 0.1em;
               position: relative;
               z-index: 1;
@@ -173,10 +173,12 @@ $each_button_width:calc($total_width * 2);
         .common{
           text-align:left;
         }
+        
         #buttons button{
-            font-size:1.2rem;
+            font-size:1rem;
             letter-spacing:0.1em;
             margin-left:2rem;
+
         }
         #title,#title2{
                 font-family: 'Poppins', sans-serif;

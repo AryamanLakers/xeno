@@ -1,13 +1,33 @@
 .investors{
     
 	width:100vw;
-	height:20vh;
-	#img1{
-		background-image:url("../Assets/img1.svg");
-		scale:1;
-		width:100%;
-		height:100%;
-		background-repeat:no-repeat;
-		background-size:contain;
+	height:50vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	#meta_data{
+		padding-top:8rem;
+		font-family: 'Poppins', sans-serif;
+	    font-size:2.5rem;
+	    font-weight: 700;
+	    color:white;
+	    margin-bottom:2rem;
 	}
+	#outer_image{
+		height:100%;
+		width:100%;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		#img1{
+			height:100%;
+			width:10rem;
+			background-image:url("../Assets/dsi_logo.svg");
+			scale:1;
+			background-repeat:no-repeat;
+			background-size:contain;
+		}
+	}
+
 }

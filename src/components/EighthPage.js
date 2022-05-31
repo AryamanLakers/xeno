@@ -1,14 +1,21 @@
 import "./EighthPage.scss";
-import {useState,useEffect} from "react"
+import {useState,useEffect,useRef} from "react"
 import Button from "./Button.js";
 import Slider from '@mui/material/Slider';
 export default function EighthPage() {
-
+    const inputElement=useRef(0);
     const [currentValue, setCurrent]= useState(30)
     const [currentPeriod, setCurrentPeriod]= useState(6)
+    
+    useEffect(() => {
+      inputElement.current = currentValue;
+    }, [currentValue]);
+
     function valuetext(value: number) {
+      console.log(value,1);
       setCurrent(value);
     }
+   
     function periodValue(value: number) {
       setCurrentPeriod(value);
     }
@@ -68,12 +75,15 @@ export default function EighthPage() {
               </div> 
               <div className="slider_amount_meta">Slide to select the amount</div>
               <div className="actual_slider">
+                  <div className="amount_shown">
+                    <input ref={inputElement} value={currentValue} onChange={(e)=>setCurrent(e.target.value)} type="text"  / >
+                  </div> 
                   <Slider
                       defaultValue={30}
                       getAriaValueText={valuetext}
                       valueLabelDisplay="auto"
                       min={0}
-                      max={10000000000000}
+                      max={1000000}
                       sx={{
                         width: width<720?150:(0.1*height+0.1*width)*1.5,
                         color: '#d51983',
@@ -94,9 +104,9 @@ export default function EighthPage() {
               <div className="common title">Earn @15% p.a.</div>
               <div className="common usd"></div>
               <div className="common add">Add</div>
-              <div className="common amount">2000</div>
+              <div className="common amount"> ${currentValue}</div>
               <div className="common toearn">to earn</div>
-              <div className="common toearn_amount">+₹300</div>
+              <div className="common toearn_amount"> ${parseFloat((0.15*currentValue).toString()).toFixed(2)}</div>
             </div>
           </div>
        </div>

@@ -5,10 +5,10 @@ export default function Footer() {
     <div className="outer">
     	<div className="footer">
         <div className="logo">Xeno</div>
-        <div>About us</div>
-        <div>Terms</div>
-        <div>FAQs</div>
-        <div>Anti Money Laundering</div>
+        <div className="common">About us</div>
+        <a href="t&c" className="common">Terms</a>
+        <a href="faq" className="common">FAQs</a>
+        <a href="aml" className="common">Anti Money Laundering</a>
      	</div>
       <div className="line"></div>
     </div>

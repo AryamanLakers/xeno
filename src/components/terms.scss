@@ -1,0 +1,26 @@
+.terms{
+	height:100vh;
+	width:100vw;
+	.outer_section{
+		padding-top:10rem;
+		text-align:center;
+		padding-bottom:8rem;
+		.title{
+			font-family: 'Poppins', sans-serif;
+            font-size:2rem;
+            font-weight: 700;
+            color:white;
+		}
+		.content{
+			margin-top:4rem;
+			width:80%;
+			color:white;
+			font-family: 'Poppins', sans-serif;
+            font-size:1.2rem;
+            font-weight: 400;
+			margin-left:10rem;
+			text-align:left;
+			
+		}
+	}
+}
