@@ -9,12 +9,14 @@ body{
 
 .first_page{
   overflow-x:hidden;
+
   height: 100vh;
   background: rgb(61,34,64);
   background: radial-gradient(circle, rgba(61,34,64,1) 0%, rgba(28,21,31,1) 34%); 
   width:100vw;
   @include center_item;
   flex-direction: column;
+  padding-top:8rem;
   .heading,.multiply{
     font-family: 'Poppins', sans-serif;
     font-size:3.5rem;
