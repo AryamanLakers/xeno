@@ -47,8 +47,7 @@ html,body{margin:0;padding:0;}
     }
     button {
 
-        margin-left:3rem;
-        margin-top:calc(0.5vh + 0.5vw);
+        margin-left:1rem;
         border: none;
         padding: 1em;
         outline: none;
@@ -68,8 +67,8 @@ html,body{margin:0;padding:0;}
           left: 50%;
           border-radius: 10em;
           transform: translateX(-50%) translateY(-50%);
-          width: 10rem;
-          height: 2.5rem;
+          width: 8rem;
+          height: 2.2rem;
           content: '';
           z-index: -2;
           background-size: 400% 400%;
@@ -93,8 +92,7 @@ html,body{margin:0;padding:0;}
       }
     .logo{  
             #inner_logo:hover{
-                animation: logo 1s ease-out;
-                animation-iteration-count: 1;
+                color:green;
             }
             font-family: 'Poppins', sans-serif;
             font-size:1.6rem;
@@ -104,18 +102,16 @@ html,body{margin:0;padding:0;}
             text-decoration:none;
             color:white;
     }
-    .logo:hover{
-      
-    }
+    
     @keyframes logo{
       0%{
-        scale: 1;
+        font-size:1rem;
       }
       50%{
         font-size:2rem;
       }
       100%{
-        scale: 1;
+        font-size:1rem;
       }
     }
    

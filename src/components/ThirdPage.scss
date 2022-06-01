@@ -81,8 +81,8 @@ $each_button_width:calc($total_width * 2);
                 left: 50%;
                 border-radius: 10em;
                 transform: translateX(- 50%) translateY(-50%);
-                width: 10rem;
-                height: 3rem;
+                width: 8rem;
+                height: 2.5rem;
 
                 content: '';
                 z-index: -2;
@@ -100,8 +100,8 @@ $each_button_width:calc($total_width * 2);
               }
               &:hover {
                 &:before {
-                  width: 115%;
-                  height: 115%;
+                  width: 8.5rem;
+                  height: 3rem;
                 }
               }
             }
@@ -173,7 +173,7 @@ $each_button_width:calc($total_width * 2);
         .common{
           text-align:left;
         }
-        
+       
         #buttons button{
             font-size:1rem;
             letter-spacing:0.1em;

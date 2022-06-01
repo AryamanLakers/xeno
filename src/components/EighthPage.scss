@@ -125,7 +125,7 @@ $slider_start_width: (75 * $slider_width);
 			  font-weight: 900;
 			  font-style: 1.2em;
 			  font-size:1rem;
-			  letter-spacing: 0.1em;
+			  letter-spacing: 0.05em;
 			  position: relative;
 			  z-index: 1;
 			  cursor: pointer;
@@ -137,8 +137,8 @@ $slider_start_width: (75 * $slider_width);
 			    left: 50%;
 			    border-radius: 10em;
 			    transform: translateX(-50%) translateY(-50%);
-			    width: 14rem;
-			    height: 3rem;
+			    width: 12rem;
+			    height: 2.5rem;
 			    content: '';
 			    z-index: -2;
 			    background-size: 400% 400%;
@@ -155,8 +155,8 @@ $slider_start_width: (75 * $slider_width);
 			  }
 			  &:hover {
 			    &:before {
-			      width: 115%;
-			      height: 115%;
+			      width: 12.5rem;
+			      height: 3rem;
 			    }
 			  }
 			}
