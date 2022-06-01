@@ -17,7 +17,7 @@ export default function SecondPage() {
       </div>
 
 
-      <div className="second_box">
+      <div className="second_box" data-aos="fade-left">
         <div className="border-gradient-purple border-gradient inner_box">
           <div id="xeno" className="common">Xeno</div>
           <div id="title" className="common">Enter your</div>

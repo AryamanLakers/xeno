@@ -6,7 +6,7 @@ export default function ThirdPage() {
 
 
    		 <div className="first_box">
-          <div className="mobile border-gradient-purple border-gradient ">
+          <div data-aos="fade-right"className="mobile border-gradient-purple border-gradient ">
             <div id="xeno" className="common">Xeno</div>
             <div id="title" className="common">Please enter your</div>
             <div id="title2"className="common">OTP</div>

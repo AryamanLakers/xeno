@@ -162,3 +162,10 @@ $slider_start_width: (75 * $slider_width);
 			}
 	}
 
+@media only screen and (min-height: 1250px) and (max-width:720px){
+  .page-8{
+      height:50vh;
+      
+  }
+  
+}

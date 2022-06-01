@@ -5,8 +5,6 @@ export default function Navbar() {
     <div className="navbar_outer">
     	<div className="navbar">
         <a href="/"className="logo"><div id="inner_logo">Xeno</div></a>
-        
-
         <button className="sign_up">Login</button>
         <button className="sign_in">Sign Up</button>
         

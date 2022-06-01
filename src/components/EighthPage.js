@@ -99,7 +99,7 @@ export default function EighthPage() {
               </div>    
             </div>
           </div>
-          <div className="box">
+          <div className="box" data-aos="slide-left">
             <div className="box1 border-gradient border-gradient-purple">
               <div className="common title">Earn @15% p.a.</div>
               <div className="common usd"></div>

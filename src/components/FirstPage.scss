@@ -95,3 +95,15 @@ body{
   .outer_first_page .first_page .invest_button .bt1{
       margin-top:4rem;
   }
+@media only screen and (min-height: 1250px) and (max-width:720px){
+  .first_page{
+      height:50vh;
+      font-size:15rem;
+      padding-top:10rem;
+  }
+  .outer_first_page .first_page .invest_button {
+    @include center_item;
+    margin-top:4rem;
+    .bt1{margin-top:0;}
+  }
+}

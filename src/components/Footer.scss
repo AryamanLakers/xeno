@@ -60,6 +60,7 @@
 	margin-bottom: 1rem;
 
 }
+
 @media only screen and (max-width: 1250px){
  	html{
  			font-size:65%;
@@ -107,4 +108,10 @@
             margin-bottom:3rem;
         }
    }
+}
+@media only screen and (min-height: 1250px) and (max-width:720px){
+  
+  html{
+    font-size:70%;
+  }
 }
