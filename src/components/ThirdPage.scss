@@ -203,3 +203,17 @@ $each_button_width:calc($total_width * 2);
         }
     }
 }
+
+@media only screen and (max-height: 820px) {
+
+ .outer_box1{
+    padding-left:1rem;
+    flex-direction:column;
+    .first_box{
+        width:80%;
+        margin-top:5rem;
+        margin-bottom:5rem;
+    }
+    .second_box1{padding-left:0;}
+ }
+}

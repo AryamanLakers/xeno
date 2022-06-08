@@ -83,3 +83,13 @@
 	}
 }
 
+@media only screen and (max-height: 820px) {
+	.fourth_page1{
+		flex-direction:column;
+		padding:5rem 0;
+		.each{
+			margin:2rem 0;
+		}
+	}
+
+}

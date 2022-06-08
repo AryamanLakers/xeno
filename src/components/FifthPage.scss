@@ -77,3 +77,21 @@
     }
   }
 }
+
+@media only screen and (max-height: 820px) {
+  .grid1{
+    height:140vh;
+    .title{
+      height:20vh;
+    }
+  }
+  .fifth_page{
+    height:100%;
+    flex-direction:column;
+    padding-bottom:5rem;
+    .each{
+      margin:2rem 0;
+    }
+  }
+
+}

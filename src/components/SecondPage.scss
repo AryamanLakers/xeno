@@ -179,3 +179,18 @@
 				}
 			}
 
+@media only screen and (max-height: 820px) {
+	.outer_box_new{
+		flex-direction:column;
+		.first_box{
+			padding:0;
+			margin-top:5rem;
+		}
+		.second_box {
+			left:42%;;
+			.inner_box{
+				width:50%;
+			}
+		}
+	}
+}

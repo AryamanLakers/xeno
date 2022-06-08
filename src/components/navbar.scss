@@ -148,3 +148,14 @@ html,body{margin:0;padding:0;}
   margin-bottom: 1rem;
 
 }
+@media only screen and (max-height: 820px) {
+  
+  .navbar_outer .navbar {
+    .logo{
+      padding-left:2rem;
+    }
+    .sign_up,.sign_in{display:none;}
+  }
+  
+  
+}

@@ -169,3 +169,23 @@ $slider_start_width: (75 * $slider_width);
   }
   
 }
+
+@media only screen and (max-height: 820px) {
+
+  .page-8 .heading, .page-8 .withdraw{padding-left:2rem;}
+  .page-8 .content{
+  	flex-direction:column;
+  	width:100%;
+  	height:80%;
+   }
+   .page-8 .content .slider_amount_meta, .page-8 .content .meta{
+   		text-align:center;
+   }
+   .page-8 .content .slider_amount_meta, .page-8 .content .slider_amount_meta{
+   		text-align:center;
+   }
+   .buttons2{text-align:center;}
+   .buttons2 button{margin:0;}
+   .page-8 .content .slider {padding:3rem 0;}
+   .page-8 .content .box{margin-top:5rem;width:100%;@include center_item;.box1{width:80%;}}
+}
